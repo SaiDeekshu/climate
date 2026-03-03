@@ -22,13 +22,23 @@ A simple and attractive Weather Application built using TypeScript and OpenWeath
 
 ## 📁 Project Structure
 
-weather-app-ts/
+```
+climate/
 │
-├── src/app.ts
-├── dist/app.js
+├── src/
+│   └── app.ts
+│
+├── dist/
+│   └── app.js
+│
+├── image/
+│   └── image.jpeg
+│
 ├── index.html
 ├── style.css
-└── tsconfig.json
+├── tsconfig.json
+└── README.md
+```
 
 ## ▶ How to Run
 
@@ -47,6 +57,4 @@ Add your OpenWeather API key inside `0df765200bf2be3879b079d7e67e1da9`.
 
 ---
 
-## 📸 Preview
 
-![Weather App Screenshot](./image/image.jpeg)
