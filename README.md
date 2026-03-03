@@ -49,4 +49,4 @@ Add your OpenWeather API key inside `0df765200bf2be3879b079d7e67e1da9`.
 
 ## 📸 Preview
 
-![Weather App Screenshot](./image/image)
+![Weather App Screenshot](./image/image.jpeg)
