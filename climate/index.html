@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- particles container -->
+  <div id="particles-js"></div>
+
+  <div class="weather-card">
+    <h1>Weather Finder</h1>
+    <input type="text" id="city-input" placeholder="Enter city" />
+    <button id="fetch-btn">Get Weather</button>
+    <p id="loading" class="hidden">Loading...</p>
+    <div id="result" class="hidden">
+      <h2 id="city-name"></h2>
+      <p id="temp"></p>
+      <p id="description"></p>
+      <img id="icon" alt="weather icon" />
+    </div>
+    <p id="error" class="error hidden"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    /* Initialize particles.js */
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 1 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <script src="dist/app.js"></script>
+</body>
+</html>
